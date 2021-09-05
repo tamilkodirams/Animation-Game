@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #e78646;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(23, 88, 150);
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>My Homepage</h1>
+  <p>A website created by me.</p>
+</div>
+
+<div class="navbar">
+  <a href="/text.html">Home</a>
+  <a href="/running.html">Animation</a>
+  <a href="/final.html">My Project</a>
+</div>
+
+<div class="row">
+  <div class="side" style="text-align: center;">
+    <h2>About LITE Program</h2>
+    <img src= "/aicte-logo.png" alt="logo">   
+    <p>AICTE and Industry led specialised leadership training for teachers from computer science and allied departments, to teach a minor degree programme in Web Development and skill their students using learner centered pedagogy, competency based curriculum and continuous assessments and professional development of faculty.</p> 
+    <p>To equip academic institutions with teaching excellence in software industry standards and become an aspirational benchmark for other academic institutions across the country.</p> 
+    
+    <h2>About Pupilfirst</h2>
+    <p>In partnership with Pupilfirst
+        Pupilfirst is a founding member of National Educational Alliance for Technology (NEAT) programme of the Ministry of Education, that is implemented by AICTE.
+        
+        Pupilfirst’s mission is to enable teachers to transform classroom education to a learner centered model and achieve near 100% learning outcomes.</p>
+    <img src= "/download.png" alt="company name">
+  </div>
+  <div class="main" style="text-align: center;">
+    <h2>Home Town Rajahmundry</h2>
+    <img src= "/godavari.jpg" alt="place name">
+   
+    <p>Ranked amongst the oldest cities in the Indian subcontinent, Rajahmundry is a beautiful city located on the banks of Godavari River.
+        The city, which is called the Cultural capital of Andhra Pradesh, is also referred to as the ‘Born City’.
+        It is thus called because poet Nannayya gave script to Telugu to make it a language. Nannayya, the first Telugu poet, was born in this city.
+        It was built by Chalukya king Rajaraja Narendra during 11th century.
+        The ancient city is popular for its active participation during various times including the freedom struggle against British rule.
+        Rajahmundry is a blend of various qualities that make the place unique, interesting, and suitable for tourism for all ages.
+        Picturesque landscapes, monuments of cultural importance, ancient temples and adventurous tourist spots are available in the city to make it an irresistible place for travelers.</p>
+    <br>
+   <div class="footer">
+  <h2>Thank you for visiting my website</h2>
+</div>
+
+</body>
+</html>
